@@ -1,0 +1,53 @@
+const cards = [
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+    {cardDescriptionTitle:'Dumbbell', machineDescription:'Lorem ipsum dolor sit amet, consectetur elit.'},
+]
+
+const gridContainer = document.querySelector(".grid-container")
+function populateGridContainer(){
+    cards.forEach(card => {
+        const cardContainer = document.createElement("div");
+        cardContainer.classList.add("card-container");
+        cardContainer.innerHTML = ` <div class="card-content-container">
+                    <div class="card-image-container">
+                        <img class="card-image" src="static/images/dumbells.svg" alt="">
+                        <div class="overlay-container"></div>
+                    </div>
+                    <div class="card-description-container">
+                        <p class="card-description-title">${card.cardDescriptionTitle}</p>
+                        <p class="machine-description">${card.machineDescription}</p>
+                    </div>
+                    <div class="edit-delete-container">
+                        <button class="edit-btn" data-bs-toggle="modal" data-bs-target="#editFitnessGoalModal">Edit</button>
+                        <button class="delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" >Delete</button>
+                    </div>
+                </div>`;
+        gridContainer.appendChild(cardContainer)
+
+    });
+}
+populateGridContainer()
+
+
+// Following the logic for customize the content in delete modal
+const modalHeading = document.querySelector("#delete-modal-heading");
+modalHeading.innerText = "Are you Sure?";
+const modalDescription = document.querySelector("#delete-modal-description")
+modalDescription.innerText = "Are you sure you want to delete this machine? All associated data will be lost"

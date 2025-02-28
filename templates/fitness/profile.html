@@ -1,0 +1,63 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    {% block links %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    {% endblock %}
+</head>
+<body>
+    
+    {% block content %}
+        <div class="heading">
+            Profile
+        </div>
+        <form class="form-container">
+            <div class="personal-information-container">
+                <div class="profile-img-container">
+                    <img class="specific-person-img" src="{% static 'images/profile_image.svg' %}" alt="">
+                    <span>Profile Photo</span>
+                    <img class="upload-img-icon" src="{% static 'images/upload-img-icon.svg' %}" alt="">
+                </div>
+                <div class="form-element">
+                    <label for="">Name</label>
+                    <input type="text" name="name" placeholder="Alexandra">
+                </div>
+                <div class="form-element">
+                    <label for="">Email</label>
+                    <input type="email" name="email" placeholder="alexa@gmail.com">
+                </div>
+                <div class="form-element">
+                    <label for="">Password</label>
+                    <div class="position-relative d-flex align-items-center">
+                        <input class="w-100" type="password" name="password" placeholder="******">
+                        <svg class="position-absolute pswd-eye " width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2368 15.1157C19.0481 14.3833 19.7135 13.6416 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C11.1603 6 10.3476 6.17115 9.57671 6.45563L12.1236 9.00251C13.682 9.06577 14.934 10.3178 14.9973 11.8762L18.2368 15.1157ZM9.39284 10.5144C9.1427 10.9524 8.99977 11.4595 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15C12.5403 15 13.0474 14.8571 13.4854 14.6069L15.787 16.9085C14.6358 17.5555 13.3526 18 11.9998 18C8.36403 18 5.23183 14.7899 3.81173 13.0657C3.42357 12.5944 3.22949 12.3588 3.22949 12C3.22949 11.6412 3.42357 11.4056 3.81174 10.9343C4.48516 10.1167 5.5436 8.96489 6.85818 7.97974L9.39284 10.5144Z" fill="#FFCB04"/>
+                            <path d="M5 2L21 18" stroke="#FFCB04" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label for="">Confirm Password</label>
+                    <div class="position-relative d-flex align-items-center">
+                        <input class="w-100" type="password" name="confirm_password" placeholder="******">
+                        <svg class="position-absolute pswd-eye " width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2368 15.1157C19.0481 14.3833 19.7135 13.6416 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C11.1603 6 10.3476 6.17115 9.57671 6.45563L12.1236 9.00251C13.682 9.06577 14.934 10.3178 14.9973 11.8762L18.2368 15.1157ZM9.39284 10.5144C9.1427 10.9524 8.99977 11.4595 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15C12.5403 15 13.0474 14.8571 13.4854 14.6069L15.787 16.9085C14.6358 17.5555 13.3526 18 11.9998 18C8.36403 18 5.23183 14.7899 3.81173 13.0657C3.42357 12.5944 3.22949 12.3588 3.22949 12C3.22949 11.6412 3.42357 11.4056 3.81174 10.9343C4.48516 10.1167 5.5436 8.96489 6.85818 7.97974L9.39284 10.5144Z" fill="#FFCB04"/>
+                            <path d="M5 2L21 18" stroke="#FFCB04" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="save-btn-container">
+                <button class="w-100">Save</button>
+            </div>
+        </form>
+        {% endblock %}
+    
+</body>
+
+</html>

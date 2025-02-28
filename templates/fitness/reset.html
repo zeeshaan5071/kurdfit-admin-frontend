@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/success-modal.css' %}">
+</head>
+<body>
+    <div class="main-login-div">
+        <div>
+            <div>
+                <p class="login-para">Reset Password</p>
+                <p class="login-description">Please set your new password here.</p>
+            </div>
+           
+            <div class="form-main-div">
+                <form class="form-container" action="">
+                    <label class="form-lables" for="new-password">New Password</label>
+                    <div class="password-icon-and-input-container">
+                        <svg class="password-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 22.75L20.8 21.4C22.8144 19.8892 24 17.5181 24 15V11C24 9.89543 23.1046 9 22 9H10C8.89543 9 8 9.89543 8 11V15C8 17.5181 9.18555 19.8892 11.2 21.4L13 22.75C14.7778 24.0833 17.2222 24.0833 19 22.75ZM14 15C14 15.5523 13.5523 16 13 16C12.4477 16 12 15.5523 12 15C12 14.4477 12.4477 14 13 14C13.5523 14 14 14.4477 14 15ZM17 15C17 15.5523 16.5523 16 16 16C15.4477 16 15 15.5523 15 15C15 14.4477 15.4477 14 16 14C16.5523 14 17 14.4477 17 15ZM19 16C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14C18.4477 14 18 14.4477 18 15C18 15.5523 18.4477 16 19 16Z" fill="#FFCB04"/>
+                        </svg>
+                        <input class="form-inputs" type="password" name="new-password" placeholder="******" id="password">
+                        <svg class="password-closed-eye" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2368 15.1157C19.0481 14.3833 19.7135 13.6416 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C11.1603 6 10.3476 6.17115 9.57671 6.45563L12.1236 9.00251C13.682 9.06577 14.934 10.3178 14.9973 11.8762L18.2368 15.1157ZM9.39284 10.5144C9.1427 10.9524 8.99977 11.4595 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15C12.5403 15 13.0474 14.8571 13.4854 14.6069L15.787 16.9085C14.6358 17.5555 13.3526 18 11.9998 18C8.36403 18 5.23183 14.7899 3.81173 13.0657C3.42357 12.5944 3.22949 12.3588 3.22949 12C3.22949 11.6412 3.42357 11.4056 3.81174 10.9343C4.48516 10.1167 5.5436 8.96489 6.85818 7.97974L9.39284 10.5144Z" fill="#FFCB04"/>
+                            <path d="M5 2L21 18" stroke="#FFCB04" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <label class="form-lables" for="confirm-password">Confirm Password</label>
+                    <div class="password-icon-and-input-container">
+                        <svg class="password-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 22.75L20.8 21.4C22.8144 19.8892 24 17.5181 24 15V11C24 9.89543 23.1046 9 22 9H10C8.89543 9 8 9.89543 8 11V15C8 17.5181 9.18555 19.8892 11.2 21.4L13 22.75C14.7778 24.0833 17.2222 24.0833 19 22.75ZM14 15C14 15.5523 13.5523 16 13 16C12.4477 16 12 15.5523 12 15C12 14.4477 12.4477 14 13 14C13.5523 14 14 14.4477 14 15ZM17 15C17 15.5523 16.5523 16 16 16C15.4477 16 15 15.5523 15 15C15 14.4477 15.4477 14 16 14C16.5523 14 17 14.4477 17 15ZM19 16C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14C18.4477 14 18 14.4477 18 15C18 15.5523 18.4477 16 19 16Z" fill="#FFCB04"/>
+                        </svg>
+                        <input class="form-inputs" type="password" name="confirm-password" placeholder="******" id="password">
+                        <svg class="password-closed-eye" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2368 15.1157C19.0481 14.3833 19.7135 13.6416 20.1878 13.0657C20.576 12.5944 20.77 12.3588 20.77 12C20.77 11.6412 20.576 11.4056 20.1878 10.9343C18.7677 9.21014 15.6355 6 11.9998 6C11.1603 6 10.3476 6.17115 9.57671 6.45563L12.1236 9.00251C13.682 9.06577 14.934 10.3178 14.9973 11.8762L18.2368 15.1157ZM9.39284 10.5144C9.1427 10.9524 8.99977 11.4595 8.99977 12C8.99977 13.6569 10.3429 15 11.9998 15C12.5403 15 13.0474 14.8571 13.4854 14.6069L15.787 16.9085C14.6358 17.5555 13.3526 18 11.9998 18C8.36403 18 5.23183 14.7899 3.81173 13.0657C3.42357 12.5944 3.22949 12.3588 3.22949 12C3.22949 11.6412 3.42357 11.4056 3.81174 10.9343C4.48516 10.1167 5.5436 8.96489 6.85818 7.97974L9.39284 10.5144Z" fill="#FFCB04"/>
+                            <path d="M5 2L21 18" stroke="#FFCB04" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    
+                </form>
+            </div>
+        </div>
+        <div class="form-btn-div">
+                <a href="" class="form-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Save</a>
+        </div>
+        <a href="{% url 'home' %}" class="back-arrow-anchor">
+            <div class="back-arrow-btn">
+                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6242 4.06243H3.63361L5.78986 1.91555C5.96639 1.73902 6.06557 1.49959 6.06557 1.24993C6.06557 1.00027 5.96639 0.760839 5.78986 0.584304C5.61332 0.40777 5.37389 0.308594 5.12423 0.308594C4.87457 0.308594 4.63514 0.40777 4.45861 0.584304L0.708606 4.3343C0.623256 4.42346 0.556351 4.5286 0.511731 4.64368C0.417965 4.87192 0.417965 5.12793 0.511731 5.35618C0.556351 5.47126 0.623256 5.57639 0.708606 5.66555L4.45861 9.41555C4.54576 9.50342 4.64945 9.57317 4.76369 9.62077C4.87793 9.66836 5.00047 9.69287 5.12423 9.69287C5.24799 9.69287 5.37053 9.66836 5.48477 9.62077C5.59902 9.57317 5.7027 9.50342 5.78986 9.41555C5.87773 9.3284 5.94747 9.22471 5.99507 9.11047C6.04266 8.99623 6.06717 8.87369 6.06717 8.74993C6.06717 8.62617 6.04266 8.50363 5.99507 8.38939C5.94747 8.27515 5.87773 8.17146 5.78986 8.08431L3.63361 5.93743H12.6242C12.8729 5.93743 13.1113 5.83866 13.2871 5.66284C13.463 5.48703 13.5617 5.24857 13.5617 4.99993C13.5617 4.75129 13.463 4.51283 13.2871 4.33702C13.1113 4.1612 12.8729 4.06243 12.6242 4.06243Z" fill="#FFCB04"/>
+                </svg>
+            </div>
+        </a>
+    </div>
+    
+    {% include 'modals/success-modal.html' %}
+ 
+  
+    <script src="{% static 'scripts/script-for-reset.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!--  -->
+

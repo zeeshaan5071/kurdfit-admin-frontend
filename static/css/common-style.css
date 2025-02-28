@@ -1,0 +1,55 @@
+/* Start of style for vertical scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D9D9D9; 
+    border-radius: 10px;
+}
+/* end of style for vertical scroll bar */
+
+/* start of style for pagination */
+.parent-container-for-pagination {
+    margin: 0px 20px;
+}
+
+.pagination-container {
+    width: 203px;
+    height: 42px;
+    background-color: #18181A;
+    border-radius: 10px;
+    color: #FFCB04;
+}
+.pagination-content-contaier {
+    margin: 10px 15px;
+}
+.counting-number-container {
+    width: 86px;
+
+}
+.counting-number-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 3px;
+    /* background-color: #FFCB04; */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.counting-number-container span.active {
+    background-color: #FFCB04; /* Active state */
+    color: #000000;;
+}
+/* end of style for pagination */

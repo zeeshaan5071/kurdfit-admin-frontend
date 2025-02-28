@@ -1,0 +1,61 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    
+    
+   
+    {% block links %}
+    <link rel="stylesheet" href="{% static 'css/exercise.css' %}">
+    {% endblock %}
+    
+</head>
+<body>
+    {% block content %}
+    
+        <div class="heading-container">
+            <div class="heading-content"><span>Exercises</span></div>
+            <div class="exercise-info-and-add-template-container">
+                <div class="exercise-info-container">
+                    <div class="exercise-count-container">
+                        <img src="{% static 'images/exercise_icon.svg' %}" alt="">
+                        <span>7 Exercises</span>
+                    </div>
+                    <div class="time-count-container">
+                        <img src="{% static 'images/yellow_clock_icon.svg' %}" alt="">
+                        <span>59 Min</span>
+                    </div>
+                    <div class="calories-count-container">
+                        <img src="{% static 'images/calories_icon.svg' %}" alt="">
+                        <span>354 Cal</span>
+                    </div>
+
+                </div>
+                <div>
+                    <button data-bs-toggle="modal" data-bs-target="#addFitnessGoalModal">Add Template</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="grid-container">
+           <!-- start of code of card -->
+           
+            <!-- end of code of card -->
+        </div>
+        {% include 'components/pagination.html' %}
+    
+    {% endblock %}
+    
+</body>
+{% block scripts %}
+<script src="{% static 'scripts/pagination.js' %}"></script>
+<script src="{% static 'scripts/exercise.js' %}"></script>
+{% endblock %}
+
+
+</html>

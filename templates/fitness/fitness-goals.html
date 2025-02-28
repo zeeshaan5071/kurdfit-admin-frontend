@@ -1,0 +1,42 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals</title>
+   
+    
+    
+    {% block links %}
+    <link rel="stylesheet" href="{% static 'css/add-fitness-goal-modal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/edit-fitness-goal-modal.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/fitness-goals.css' %}">
+    {% endblock %}
+    
+</head>
+<body>
+    
+    {% block content %}
+    <div class="heading-container">
+        <div class="heading-content"><span>Fitness Goals</span></div>
+        <div><button data-bs-toggle="modal" data-bs-target="#addFitnessGoalModal">Add Fitness Goal</button></div>
+    </div>
+    <div class="grid-container">
+       <!-- start of code of card -->
+        
+        <!-- end of code of card -->
+    </div>
+    {% include 'components/pagination.html' %}
+    {% include 'modals/add-fitness-goal-modal.html' %}
+    {% include 'modals/edit-fitness-goal-modal.html' %}
+
+    {% endblock %}
+</body>
+{% block scripts %}
+<script src="{% static 'scripts/pagination.js' %}"></script>
+<script src="{% static 'scripts/fitness-goals.js' %}"></script>
+{% endblock %}
+</html>

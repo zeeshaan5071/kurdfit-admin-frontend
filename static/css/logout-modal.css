@@ -1,0 +1,67 @@
+#logoutModal .main-modal-dialog-container {
+    max-width: 840px;
+    width: 100%;
+}
+#logoutModal .main-modal-content {
+    background-color: #18181A;
+    padding: 40px 0px;
+}
+#logoutModal .main-modal-body {
+    display: flex;
+    justify-content: center;
+}
+#logoutModal .modal-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    max-width: 390px;
+    width: 100%;
+}
+#logoutModal .modal-heading{
+    font-weight:500;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: Poppins;
+}
+#logoutModal .modal-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgba(225,225,225,0.65);
+    text-align: center;
+    
+}
+#logoutModal .delete-btn-container {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#logoutModal .modal-logout-button {
+    max-width: 412px;
+    width: 100%;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #DC1F1F;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+}
+#logoutModal .red-cross-icon-container {
+    position: absolute;
+    top: 25px; 
+    right: 25px;
+    pointer-events: all;
+    cursor: pointer;
+}
+#logoutModal .modal-container {
+    position: relative;
+    width: 100%;
+}

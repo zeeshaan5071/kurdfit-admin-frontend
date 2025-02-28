@@ -1,0 +1,66 @@
+.header {
+    width: 100%;
+} 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    height: 100%;
+    background-color: #18181A;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.horizontal-gradient-line {
+    width: 250px;
+    height: 1.5px; /* Instead of border, use height for a thin line */
+    background: linear-gradient(to right, #FFFFFF1A 10%, #DDDDDD66 40%, #FFFFFF1A 90%);
+    margin: 20px;
+    border: none; /* Remove border if using background */
+}
+.nav-links {
+    list-style: none;
+    /* position: relative; */
+    padding: 0px 20px;
+}
+.nav-links li {
+    padding: 10px 0px;
+    border-radius: 10px;
+    height: 44px;
+}
+.nav-links li a {
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+    color: #AAAAAA;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.nav-links li.active  {
+    background-color: #FFCB04;
+}
+.nav-links li.active a p {
+    color: #000000;
+}
+.side-bar-icon {
+    padding-left: 10px;
+}
+.nav-links li.active .side-bar-icon path  {
+    fill: #000000;
+}
+/* .side-bar-icon path {
+    fill: brown;
+} */
+.profile-and-logout-container {
+    padding-bottom: 20px;
+}
+

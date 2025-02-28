@@ -1,0 +1,41 @@
+<!--Add fitness goal modal -->
+{% load static %}
+
+<div class="modal fade" id="addFitnessGoalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered main-modal-dialog-container">
+        <div class="outer-container-for-red-cross-icon-and-main-modal-container">
+            <div class="modal-content main-modal-container">
+                <div class="modal-body main-modal-body">
+                    <div class="modal-content-container">
+                        <p class="modal-heading">Add Fitness Goal</p>
+                        <div class="upload-image-and-inputs-container">
+                            <div>
+                                <div class="upward-arrow-container">
+                                    <img src="{% static 'images/upload_icon.svg' %}" alt="">
+                                </div>
+                                <p class="upload-img-title">Upload Image</p>
+                            </div>
+                            <div class="form-container">
+                                <form action="">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" placeholder="Write..">
+                                    <label for="description">Description</label>
+                                    <input type="text" id="description" placeholder="write..">
+                                </form>
+                            </div>
+                            
+                        </div>
+                        <!-- <p class="modal-description">Your password has been updated successfully! You can now log in with your new password.</p> -->
+                    </div>
+                </div>
+                <div class="modal-footer save-btn-container">
+                  <button  type="button" class="save-btn" data-bs-dismiss="modal">Save</button>
+                </div>
+            </div>
+            <div type="button" class="red-cross-container" data-bs-dismiss="modal">
+                <img src="{% static 'images/red-cross-icon.svg' %}" alt="">
+            </div>
+        </div>
+    </div>
+    
+</div>

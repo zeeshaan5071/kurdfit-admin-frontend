@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaitons</title>
+    {% block links %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="{% static 'css/edit-notification-modal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/notifications.css' %}">
+    {% endblock %}
+    
+</head>
+<body>
+    
+    {% block content %}
+        <div class="heading">
+            Notification Management
+        </div>
+         <!-- start of code for table container -->
+        <div class="table-container">
+           <table>
+                <thead>
+                    <tr>
+                        <th data-col="name"><span>Name</span></th>
+                        <th data-col="email"><span>Email Address</span></th>
+                        <th data-col="gender"><span>Gender</span></th>
+                        <th data-col="age"><span>Age</span></th>
+                        <th data-col="height"><span>Height</span></th>
+                        <th data-col="weight"><span>Weight</span></th>
+                        <th data-col="action"><span>Action</span></th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+        <!-- end of code for table container -->
+        {% include 'components/pagination.html' %}
+   
+    {% include 'modals/edit-notification-modal.html' %}
+    {% endblock %}
+    
+</body>
+{% block scripts %}
+<script src="{% static 'scripts/pagination.js' %}"></script>
+<script src="{% static 'scripts/notifications.js' %}"></script>
+{% endblock %}
+</html>

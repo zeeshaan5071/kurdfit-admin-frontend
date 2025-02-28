@@ -1,0 +1,119 @@
+/* style for edit fitness goals modal  */
+#editFitnessGoalModal .main-modal-dialog-container {
+    max-width: 840px;
+    width: 100%;
+}
+#editFitnessGoalModal .main-modal-container {
+    background-color: #18181A;
+    padding: 40px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(225,225,225,0.15);
+}
+#editFitnessGoalModal .main-modal-body {
+    display: flex;
+    justify-content: center;
+}
+#editFitnessGoalModal .modal-content-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    max-width: 410px;
+    width: 100%;
+}
+#editFitnessGoalModal .modal-heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Poppins;
+}
+#editFitnessGoalModal .modal-description {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+}
+#editFitnessGoalModal .save-btn-container {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#editFitnessGoalModal .save-btn {
+
+    max-width: 412px;
+    width: 100%;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #FFCB04;
+    color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+}
+#editFitnessGoalModal .upward-arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    background-color: #242328;
+    width: 100%;
+}
+#editFitnessGoalModal .upload-image-and-inputs-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#editFitnessGoalModal .upward-arrow-container img {
+    width: 42px;
+    height: 42px;
+}
+#editFitnessGoalModal .upload-img-title {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#editFitnessGoalModal .form-container {
+    width: 100%;
+}
+#editFitnessGoalModal .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+#editFitnessGoalModal .form-container form label {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+#editFitnessGoalModal .form-container form input {
+    background-color: #242328;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+}
+#editFitnessGoalModal .form-container form input::placeholder {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #878787;
+    padding-left: 15px;
+}
+#editFitnessGoalModal .outer-container-for-red-cross-icon-and-main-modal-container {
+    position: relative; 
+    width: 100%;
+}
+#editFitnessGoalModal .red-cross-container {
+    position: absolute; 
+    top: 25px; 
+    right: 25px;
+    pointer-events: all;
+}

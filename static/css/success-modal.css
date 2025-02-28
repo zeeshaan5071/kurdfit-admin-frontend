@@ -1,0 +1,51 @@
+.main-modal-dialog-contianer {
+    max-width: 657px;
+    width: 100%;
+}
+.main-modal-content {
+    background-color: #18181A;
+    padding: 40px 0px;
+}
+.main-modal-body {
+    display: flex;
+    justify-content: center;
+}
+.modal-content-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    max-width: 390px;
+    width: 100%;
+}
+.modal-heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Poppins;
+}
+.modal-description {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+}
+.dismiss-btn-container {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.dismiss-btn {
+
+    max-width: 412px;
+    width: 100%;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #FFCB04;
+    color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+}

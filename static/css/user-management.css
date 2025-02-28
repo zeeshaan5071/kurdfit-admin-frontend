@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #242328;
+    font-family: Poppins;
+}
+.content {
+    position: relative;
+    left: 290px;
+    width: calc(100% - 290px);
+}
+
+.heading {
+    color: #FFFFFF;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+/* start of style for table container */
+
+.table-container {
+    margin: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #18181A;
+    color: rgba(225,225,225,0.6);
+    /* max-height: 500px; */
+    overflow-y: auto;
+    height: calc(100vh - 141px);
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    height: 64px;
+    background-color:#18181A;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+th[data-col="name"] {
+    width: 13.83%;
+}
+
+th[data-col="email"] {
+    width: 16.98%;
+}
+
+th[data-col="gender"] {
+    width: 12.57%;
+}
+
+th[data-col="age"] {
+    width: 12.57%;
+}
+
+th[data-col="height"] {
+    width: 12.57%;
+}
+
+th[data-col="weight"] {
+    width: 13.83%;
+}
+
+th[data-col="action"] {
+    width: 16.69%;
+}
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+th {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(225,225,225,0.6);
+    border-bottom: 1px solid #242328; 
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+.name-and-picture-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.edit-and-delete-container {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+tbody tr {
+    height: 68px;
+    border-bottom: 1px solid #242328; 
+}

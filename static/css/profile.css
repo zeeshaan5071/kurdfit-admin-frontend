@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #242328;
+    font-family: Poppins;
+}
+.content {
+    position: relative;
+    left: 290px;
+    width: calc(100% - 290px);
+
+}
+.heading {
+    color: #FFFFFF;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.form-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #18181A;
+    color: rgba(225,225,225,0.6);
+    height: calc(100vh - 84px);
+    overflow-y: auto;
+    padding: 20px 0px;
+
+}
+.personal-information-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+.profile-img-container {
+    position: relative;
+    width: 206px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.profile-img-container span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.specific-person-img {
+    width: 206px;
+    height: 206px;
+    border-radius: 50%;
+    border: 2px solid #FFCB04;
+}
+.upload-img-icon {
+    position: absolute;
+    right: 21px;
+    bottom: 46px;
+}
+.form-container .form-element {
+    width: 100%;
+}
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-element input {
+    background-color: #242328;
+    height: 52px;
+    border-radius: 10px;
+    border: none;
+}
+.form-element input::placeholder {
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #878787;
+}
+.form-element label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.pswd-eye {
+    right: 20px;
+}
+.save-btn-container {
+    max-width: 410px;
+    width: 100%;
+}
+.save-btn-container button {
+    height: 50px;
+    border-radius: 8px;
+    background-color: #FFCB04;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+
+
